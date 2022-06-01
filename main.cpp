@@ -13,6 +13,19 @@ vector<string> split(const string &);
  */
 
 void miniMaxSum(vector<int> arr) {
+    long long minSum = 0;
+    long long maxSum = 0;
+    //Function takes in 5 positive ints, and then sum 4 of the 5 ints, finding max and min values.
+    //Then print the two values.
+
+
+    //Need to sort the vector first
+
+    //if want min, then just sum from beginning of the vector to n-1
+
+    //if want max, then sum from beginning + 1 of the vector to n
+
+    //Must print the min value and then the max value
 
 }
 
@@ -29,6 +42,7 @@ int main()
     for (int i = 0; i < 5; i++) {
         int arr_item = stoi(arr_temp[i]);
 
+        //Data validate that arr_item is at least 1 and not greater than 1e9.
         arr[i] = arr_item;
     }
 
