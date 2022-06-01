@@ -48,7 +48,12 @@ int main()
         int arr_item = stoi(arr_temp[i]);
 
         //Data validate that arr_item is at least 1 and not greater than 1e9.
-        arr[i] = arr_item;
+        if (arr_item >= 1 && arr_item <= 1e9) {
+            arr[i] = arr_item;
+        }
+        else {
+            arr[i] = 0;
+        }
     }
 
     miniMaxSum(arr);
